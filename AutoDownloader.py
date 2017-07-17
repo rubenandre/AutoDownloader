@@ -43,7 +43,6 @@ try:
 	fileType = sys.argv[1]
 	link = sys.argv[2]
 	downloader = converter(link, fileType)
-	print(downloader)
 
 except:
 	print ajuda()
