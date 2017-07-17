@@ -17,7 +17,7 @@ def converter(link, fileType):
 	return downloader
 	
 def ajuda():
-		return """
+return """
 USAGE:  python AutoDownloader.py [Extensão do Ficheiro] [Server]
 		
         Ex:
