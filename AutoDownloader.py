@@ -17,27 +17,27 @@ def converter(link, fileType):
 	return downloader
 	
 def ajuda():
-return """
-USAGE:  python AutoDownloader.py [Extensão do Ficheiro] [Server]
-		
-        Ex:
-        python AutoDownloader.py pdf http://127.0.0.1 
-	python AutoDownloader.py docx https://127.0.0.1 
-"""
+	return """
+	USAGE:  python AutoDownloader.py [Extensão do Ficheiro] [Server]
+			
+		Ex:
+		python AutoDownloader.py pdf http://127.0.0.1 
+		python AutoDownloader.py docx https://127.0.0.1 
+	"""
 
 #########
 
 if len(sys.argv) > 1:
 	if sys.argv[1] == '-h':
-		print ajuda()
+		print (ajuda())
 		sys.exit(0)
 
-print """
+print ("""
 +-----------------------------------------------------+
 |                    AutoDownloader                   |
 +-----------------------------------------------------+
                       Rúben Silva 
-"""
+""")
 
 try:
 	fileType = sys.argv[1]
@@ -45,7 +45,7 @@ try:
 	downloader = converter(link, fileType)
 
 except:
-	print ajuda()
+	print (ajuda())
 	sys.exit(0)
 
 try:
